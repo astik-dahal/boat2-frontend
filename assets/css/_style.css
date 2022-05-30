@@ -32,6 +32,11 @@ body {
     padding: 0px 30px;
   }
 }
+@media screen and (max-width: 460px) {
+  .container {
+    padding: 0px 10px;
+  }
+}
 ::placeholder {
   font-family: "SF Pro Display";
 }
@@ -203,7 +208,7 @@ header {
 /* HOW TO USE SECTION */
 
 .how-to-use-wrapper {
-  margin-top: 260px;
+  margin-top: 100px;
   margin-bottom: 50px;
   overflow: hidden;
 }
@@ -226,17 +231,26 @@ header {
   font-size: 20px;
 }
 .htw-one {
-  overflow-x: hidden;
+  /* border: 1px solid red; */
+  height: 750px;
+  overflow: visible !important;
+  background-image: url("../images/bg2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: 150% 50%; */
+  background-position: 115% 50%;
+  padding-right: 10px;
+  margin-right: -10px;
 }
+
 .htwo-image {
   position: absolute;
-  right: 180px;
+  left: 180px;
   margin-top: 190px;
   z-index: -1;
 }
 
 .htw-two {
-  margin-top: 150px;
   height: 450px;
 }
 .htw-two .htw-text {
@@ -257,6 +271,9 @@ header {
 @media screen and (max-width: 1700px) {
   .htwo-image {
     right: -0px;
+  }
+  .htw-one {
+    background-size: 70%;
   }
 }
 @media screen and (max-width: 1340px) {
@@ -297,12 +314,18 @@ header {
   .htwt-image img {
     width: 350px;
   }
+  .how-to-use-wrapper {
+    margin-top: 60px;
+  }
+  .htw-one {
+    height: 550px;
+  }
+  .htw-two {
+    margin-top: 0px;
+  }
 }
 /* phone */
 @media screen and (max-width: 930px) {
-  .how-to-use-wrapper {
-    margin-top: 80px;
-  }
   .htw-text {
     width: max-content;
   }
@@ -334,21 +357,29 @@ header {
     align-items: center;
     justify-content: center;
   }
+  .htw-one {
+    height: 500px;
+    background-size: contain;
+    background-position: 50% 0%;
+  }
   .htwo-image {
     position: static;
     margin-left: 60%;
   }
-
-  .htw-one .htw-text {
-    margin-top: -250px;
+  .how-to-use-wrapper {
+    margin-top: 290px;
   }
+  .htw-one .htw-text {
+    margin-top: 230px;
+  }
+
   .htw-text {
     text-align: center;
   }
 
   .htw-two {
-    margin-top: 60px;
     flex-direction: column;
+    margin-top: -90px;
   }
 
   .htwo-image img {
